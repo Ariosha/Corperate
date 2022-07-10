@@ -36,13 +36,13 @@
    }
 
    .menu ul:hover {
-    border: 1px solid #24A19C;
+    border: 1px solid #34f8af;
    }
-
+   
    .menu ul {
     padding: 5px 14px;
    }
-
+   /*Test*/
    /* DROPDOWN MENU */
    .services {
     position:static; 
@@ -53,10 +53,6 @@
     position: absolute; /*WITH RESPECT TO PARENT*/
     display: none;
     border-radius: 8px;
-   }
-
-   .dropdown ul + ul {
-    margin-top: 10px;
    }
 
    .dropdown ul {
