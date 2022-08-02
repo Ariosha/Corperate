@@ -25,43 +25,43 @@
 /* NAVBAR STYLING STARTS */
 .navbar {
     display:flex;
-    background-color: #181d24;
-    color: #CCCCCC;
+        background-color: #181d24;
+        color: #CCCCCC;
    }
 
    /* NAVBAR MENU */
    .menu {
-    display: flex;
-    font-size: 20px;
+        display: flex;
+        font-size: 20px;
    }
 
    .menu ul:hover {
-    border: 1px solid #34f8af;
+        border: 1px solid #34f8af;
    }
    
    .menu ul {
-    padding: 5px 14px;
+        padding: 5px 14px;
    }
 
    /* DROPDOWN MENU */
    .services {
-    position:static; 
+        position:static; 
    }
 
    .dropdown {
-    padding: 1em 0;
-    position: absolute; /*WITH RESPECT TO PARENT*/
-    display: none;
-    border-radius: 8px;
+        padding: 1em 0;
+        position: absolute; /*WITH RESPECT TO PARENT*/
+        display: none;
+        border-radius: 8px;
    }
 
    .dropdown ul {
-    padding: 0.5em 1em;
-    width: 8em;
-    text-align: center;
+        padding: 0.5em 1em;
+        width: 8em;
+        text-align: center;
    }
 
    .services:hover .dropdown {
-    display: block;
+        display: block;
    }
    

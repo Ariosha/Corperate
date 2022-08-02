@@ -16,9 +16,9 @@
           <div class="menu">
             <ul>Home</ul>
             <ul>About</ul>
+
             <ul class="services">
               Services
-
               <!-- DROPDOWN MENU -->
               <ul class="dropdown monoFont">
                 <ul>Dropdown 1</ul>
@@ -28,20 +28,75 @@
                 <ul>Dropdown 4</ul>
               </ul>
             </ul>
+
             <ul>Pricing</ul>
             <ul>Contact</ul>
             <div id="like_button_container"></div>
           </div>
         </ul>
-      </nav>
+    </nav>
 
+    <!--This is the main text body-->
     <div class="Vanilla monoFont">
-      
+
         <h1>"Heading"</h1>
         <p>"paragraph."</p>
         <p>The missions of this website is to create a space for future projects and life management, this includes mechatronics (books, documments, notes, pdfs etc)</p>
+
     </div>
     
+    <div>
+      <canvas style="position: relative; height:40vh; width:80vw" id="myChart"></canvas>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script>
+
+      const labels = ['CEO Byungho','CIO Tanner','COO Mirado',];
+      
+      // #29AB87 = Jungle green, #00755E = Tropical Rainforest, #004B49 = Deep Jungle green
+      const CHART_COLORS = ["#29AB87", "#00755E", "#004B49"];
+      
+      const data = {
+        labels: labels,
+        datasets: [{
+          label: 'My First dataset',
+          backgroundColor: Object.values(CHART_COLORS),
+          borderColor: 'black',
+          data: ["50000", "10000", "10000"],
+        }]
+      };
+      
+      const config = {
+        type: 'pie',
+        data: data,
+        options: {
+          responsive: true,
+          plugins: {
+            legend: {
+              position: 'bottom',
+            },
+            title: {
+              display: true,
+              text: 'Share Holdings',
+              color:"White"
+            }
+          }
+        },
+      };
+      
+    </script>
+    
+    <script>
+      const myChart = new Chart(
+        document.getElementById('myChart'),
+        config
+      );
+      
+    </script>
+     
+
 </body>
 
 </html> 
